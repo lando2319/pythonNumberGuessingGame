@@ -4,11 +4,11 @@ print("")
 print("Jason's Random Number Guessing Game") 
 
 
-# roundNum = 0
+roundNum = 1
 
-def runGame():
+def runGame(roundNum):
     print("")
-    print("READY FOR ROUND") 
+    print("READY FOR ROUND " + str(roundNum)) 
 
     text = raw_input ("Your number is: ")
     print("")
@@ -28,9 +28,9 @@ def runGame():
 
     # print("YOU HAVE ", verdict, "Round", roundNum)
     print("YOU HAVE " + verdict + " Round")
-    # roundNum = roundNum + 1
-    return runGame()
+    roundNum = roundNum + 1
+    return runGame(roundNum)
 
 
 
-runGame()
+runGame(roundNum)
